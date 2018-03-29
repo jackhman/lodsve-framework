@@ -50,7 +50,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableConfigurationProperties({RdbmsProperties.class, P6SpyProperties.class, DruidProperties.class})
-@ComponentScan({"lodsve.mybatis.key", "lodsve.mybatis.datasource"})
+@ComponentScan("lodsve.mybatis.datasource.dynamic")
 @EnableAspectJAutoProxy
 public class MyBatisConfiguration {
     @Autowired
